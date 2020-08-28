@@ -1,19 +1,20 @@
 package com.example.pinmycar;
 
-import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.Date;
 
 public class Pin {
-    EditText label;
+    String label;
     Date date;
     Double latitude;
+    Double longitude;
 
-    public EditText getLabel() {
+    public String getLabel() {
         return label;
     }
 
-    public void setLabel(EditText label) {
+    public void setLabel(String label) {
         this.label = label;
     }
 
@@ -40,6 +41,4 @@ public class Pin {
     public void setLongitude(Double longitude) {
         this.longitude = longitude;
     }
-
-    Double longitude;
 }
